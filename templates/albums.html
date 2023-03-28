@@ -1,0 +1,19 @@
+<!-- GET /albums -->
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Albums</h1>
+    <div>
+      <div>
+        {% for album in albums %}
+          <p>
+            Title: {{ album.title }}<br>
+            Released: {{ album.release_year }}
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- ... -->
+  </body>
+</html>
